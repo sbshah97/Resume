@@ -1,2 +1,4 @@
 # Resume
-This contains my resume, cover letter and all other documents necessary for anyone to view
+This contains my resume and all other documents necessary for anyone to view.
+
+Last updated on **5th January 2016**.
