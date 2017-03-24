@@ -3,12 +3,12 @@
 % -*- coding: UTF-8; -*-
 % vim: set fenc=utf-8
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SIMPLE-RESUME-CV
 %% <https://github.com/zachscrivena/simple-resume-cv>
 %% This is free and unencumbered software released into the
 %% public domain; see <http://unlicense.org> for details.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % See "README.md" for instructions on compiling this document.
 
@@ -17,9 +17,9 @@
 % a4paper, letterpaper, nonstopmode, draftmode
 % MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
 %% PREAMBLE.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
 
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Salman Shah}
@@ -48,9 +48,9 @@ breaklinks}
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 %% ACTUAL DOCUMENT.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -69,8 +69,8 @@ breaklinks}
 \,\SubBulletSymbol\,
 +91\,886\,189-7183
 \,\SubBulletSymbol\,
-\href{\CVWebpage}
-{\url{\CVWebpage}}
+\textcolor{blue}{\href{\CVWebpage}
+{\url{\CVWebpage}}}
 \end{SubTitle}
 
 \begin{Body}
@@ -85,9 +85,11 @@ breaklinks}
 {PDF:Education}
 
 \Entry
+\textcolor{blue}{
 \href{http://nitk.ac.in/}
-{\textbf{NITK Surathkal}},
-Surathkal, Mangalore, India
+{\textbf{NITK Surathkal}}
+}
+,Surathkal, Mangalore, India
 \hfill
 \DatestampYMD{2015}{08}{23} --
 \DatestampYMD{2019}{04}{23}
@@ -96,28 +98,39 @@ Surathkal, Mangalore, India
 \Gap
 \BulletItem
 B. Tech. in 
+\textcolor{blue}{
 \href{http://infotech.nitk.ac.in/}
 {Information Technology}
-
+}
 \Gap
+
 \Entry
+\textcolor{blue}{
 \href{http://www.iitianspace.com/}
 {\textbf{IITians PACE Junior Science College}}
+}
 \hfill
 \DatestampYMD{2013}{06}{15} --
 \DatestampYMD{2015}{06}{15}
-
 \Gap
+
 \BulletItem
 89.85\% in 
-\href{http://www.example.com/my-department}
+\href{https://drive.google.com/open?id=0BxuVe1f_hNs2TDA4em5UUE9jdDQ}
 {HSC Board Examination}
-
 \Gap
+
+\BulletItem
+All India Rank 2214 in 
+\href{http://www.example.com/my-department}
+{JEE (Mains) Entrance Examination}
+\Gap
+
 \Entry
+\textcolor{blue}{
 \href{http://www.hansrajeducation.org/}
-{\textbf{Hansraj Morarji Public School}},
-Andheri(West), Mumbai, India
+{\textbf{Hansraj Morarji Public School}}}
+, Andheri(West), Mumbai, India
 \hfill
 \DatestampYMD{2008}{06}{23} --
 \DatestampYMD{2013}{03}{15}
@@ -125,14 +138,14 @@ Andheri(West), Mumbai, India
 \Gap
 \BulletItem
 92.18\% in
-\href{http://www.example.com/my-department}
+\href{https://drive.google.com/file/d/0BxuVe1f_hNs2QXVwX2F2V0VXTEE/view?usp=sharing}
 {SSC Board Examination}
 \begin{Detail}
 \end{Detail}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
 %% EXPERIENCE %%
-%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
 
 \Section
 {Experience}
@@ -146,8 +159,10 @@ Andheri(West), Mumbai, India
 
 \Entry
 \textbf{Lead Web and App Developer,}
+\textcolor{blue}{
 \href{http://wheelsonroll.com/}
 {Wheels On Roll,}
+}
 Mangalore, India
 \hfill
 \DatestampYMD{2016}{09}{15} --
@@ -157,15 +172,15 @@ Mangalore, India
 \BulletItem
 Developed Static Website using HTML, CSS, JavaScript and open-source front-end frameworks like Materialize CSS as also using third-party APIs like Crisp to include Chat Functionality in the website.
 \BulletItem
-Worked with Product Development Team to develop an IoT framework using Sanic and Firebase to connect the hardware to the Mobile App.
-\BulletItem
-Also developed UI and UX of the Android app primarily using Google's Material Design Guidelines.
+Worked with Product Development Team to develop an IoT framework using Sanic and Firebase to connect the hardware to the Mobile App. Also developed UI and UX of the Android app primarily using Google's Material Design Guidelines.
 \Gap
 
 \Entry
 \textbf{Web and App Developer,}
+\textcolor{blue}{
 \href{http://changepay.in/}
 {Change Pay,}
+}
 Mangalore, India
 \hfill
 \DatestampYMD{2016}{12}{15} --
@@ -177,13 +192,11 @@ Developed Dynamic Website using HTML, CSS, JavaScript and front-end frameworks l
 \BulletItem
 Developed User Sign In functionality in the website using Django framework thereby allowing users to check their balance online.
 \BulletItem
-Developed UI and UX of the Android app primarily using Google's Material Design Guidelines.
-\BulletItem
-Also worked with third-party APIs like PayUMoney to integrate a payment gateway inside the app.
+Developed UI and UX of the Android app primarily using Google's Material Design Guidelines. Also worked with third-party APIs like PayUMoney to integrate a Payment Gateway inside the mobile app.
 
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
 %% TECHNICAL SKILLS %%
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
 {Technical Skills}
@@ -194,18 +207,108 @@ Also worked with third-party APIs like PayUMoney to integrate a payment gateway 
 \textbf{Languages/Markup and Scripts}
 - C, C++, Java, Python, JavaScript, HTML, CSS, Bash.
 \Gap
+
 \textbf{Tools}
 - Android Studio, NetBeans, Code::Blocks, PyCharm, vi Editor.
 \Gap
+
 \textbf{Frameworks}
-- Git, STL, LATEX, OpenGL, Jekyll, Materialize CSS, jQuery.
+- Git, STL, OpenGL, Jekyll, Materialize CSS, jQuery.
+\Gap
+
+\textbf{DBMS}
+- Microsoft Azure, Firebase
 
 \BigGap
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%% SELECTED PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Selected Projects}
+{Selected Projects}
+{PDF:SelectedProjects}
+
+\Entry
+All Projects available on
+\textcolor{blue}{
+\href{https://github.com/salman-bhai}
+{\textbf{GitHub}}}
+
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/NotesNearby}{
+\textbf{Notes Nearby}}
+}
+Notes Nearby is an Augmented Reality based-app which takes Users' location to point to nearby restaurants and attractions. App is developed in Android using Microsoft Azure Database and Microsoft Cognitive Services for Speech-To-Text. 
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/Hrily/TopMusicPull}{
+\textbf{Top Music Pull}}
+}
+Developed a Python Application to download top trending playlists like Billboard Top Hot 100, Vevo Top 20 from YouTube. Used Bash Scripting and Python for downloading the top-trending songs and used third-party libraries like Youtube-Dl for the same.    
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/WhatsApp-Web}{
+\textbf{WhatsApp Web}}
+}
+Developed a Terminal Interface to send messages via Computer Terminal to WhatsApp Web. Used Python Web Scraping to get the JavaScript from the Web. Developed only for Linux Computers and creates a local backup of upto 30 messages per user at a single instance.  
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/My-Website}{
+\textbf{Personal Website and Blog}}
+}
+Personal Website using Front End frameworks like MaterializeCSS and jQuery and Jekyll for 
+\href{https://github.com/salman-bhai/Blog}{Blog} using Minima gem. Currently hosted on GitHub in line with Google's Material Design Guidelines.
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/TicTacToe}{
+\textbf{Tic Tac Toe}}
+}
+Built a Tic Tac Toe game implemented in Java and used Java Swing as GUI. 
+Implemented User v/s User, User vs CPU (where CPU plays randomly), User vs AI and CPU vs AI (where AI implements Greedy Algorithm).
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/NITKWebsite}{\textbf{NITK Website}}
+}
+Worked on the Front-end Website Team for NITK Website using HTML, CSS and JavaScript and front-end frameworks like Bootstrap, jQuery and Materialize CSS. 
+{\textbf{(On Going)}}
+\Gap
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/IEEE-NITK/DeepNLP}{\textbf{Deep NLP}}
+}
+Deep Learning with NLP aims combines the power of Natural Language Processing with Deep Learning to train models using Google's Tesorflow Network to build a chatbot which answers questions given a sample corpus of Game of Thrones books and TV Series subtitles.
+{\textbf{(On Going)}}
+\Gap
+
+
+\BulletItem
+\textcolor{blue}{
+\href{https://github.com/salman-bhai/stocks-predictor}{\textbf{Stockify}}
+}
+Stockify aims to combine the power of Machine Learning and Finance to create a custom Stocks Predictor which will predict the price of the stocks in a particular market. 
+{\textbf{(On Going)}}
+\Gap
+
+\BigGap
+%%%%%%%%%%%%%%%%%%%%%%
 %% RELEVANT COURSES %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
 {Relevant Courses}
@@ -217,85 +320,9 @@ Data Structures,
 Digital Design and Computer Organization, Design and Analysis of Algorithms, Operating Systems, Networks, UNIX
 Programming, Computer Graphics, Paradigms Of Programming - Part I and II, Object Oriented Analysis and Design, Probability, Graph Theory.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% SELECTED PROJECTS %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\Section
-{Selected Projects}
-{Selected Projects}
-{PDF:SelectedProjects}
-
-\Entry
-All Projects available on
-\href{https://github.com/salman-bhai}
-{\textbf{GitHub}},
-\Gap
-
-\SubSection
-{Android}
-{Android}
-{PDF:Android}
-\Gap
-
-\BulletItem
-\href{https://github.com/salman-bhai/NotesNearby}{\textbf{Notes Nearby - }}
-Notes Nearby is an Augmented Reality based-app which takes Users' location to point to nearby restaurants and attractions. App is developed in Android using Microsoft Azure Database. 
-\Gap
-
-\SubSection
-{Python}
-{Python}
-{PDF:Python}
-\Gap
-
-\BulletItem
-\href{https://github.com/Hrily/TopMusicPull}{\textbf{Top Music Pull - }}
-Developed a Python Application to download Billboard Top Hot 100 songs from YouTube. Used Bash and Python  
-\Gap
-
-\BulletItem
-\href{https://github.com/salman-bhai/WhatsApp-Web}{\textbf{WhatsApp Web}}
-Developed a Terminal Interface to send messages via Computer Terminal to WhatsApp Web. Used Python Web Scraping to get JavaScript from the Web. Developed only for Linux Computers.  
-\Gap
-
-\SubSection
-{Web}
-{Web}
-{PDF:Web}
-\Gap
-
-\BulletItem
-\href{https://github.com/salman-bhai/NITKWebsite}{\textbf{NITK Website}}
-Worked on the Front-end Website Team for NITK Website using HTML, CSS and JavaScript and front-end frameworks like Bootstrap, jQuery and Materialize CSS. 
-{\textbf{(On Going)}}
-\Gap
-
-\BulletItem
-\href{https://github.com/salman-bhai/My-Website}{\textbf{Personal Website and Blog}}
-Personal Website using Front End frameworks like MaterializeCSS and jQuery and Jekyll for 
-\href{https://github.com/salman-bhai/Blog}{Blog} using Minima gem to be used as a Content Management System.
-\Gap
-
-\newpage
-
-\SubSection
-{Java}
-{Java}
-{PDF:Java}
-\Gap
-
-\BulletItem
-\href{https://github.com/salman-bhai/TicTacToe}{\textbf{Tic Tac Toe}}
-Built a Tic Tac Toe game implemented in Java and used Java Swing as GUI. 
-Implemented User v/s User, User vs CPU (where CPU plays randomly), User vs AI and CPU vs AI (where AI implements Greedy Algorithm).
-\Gap
-
-
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
 %% ACHIEVEMENTS %%
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
 
 \Section
 {Achievements}
@@ -326,9 +353,9 @@ Presented a research project at the 19th Indian National Children Science Congre
 {\textbf{Scored 99.8 percentile }}
 in the All-India entrance exam for NITs – JEE (Mains).\Gap
 
-%%%%%%%%%%%%%%%%%%%%%%%
-%% EXTRA CURRICULAR ACTIVITES %%
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXTRA CURRICULAR ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
 {Extra Curricular Activites}
@@ -354,8 +381,10 @@ at LSD - Literary, Stage and Debating Society.
 \BulletItem
 {\textbf{Competitive Programming: }}
 Active on popular websites like
-\href{https://www.codechef.com/users/sbshah}{Codechef} and 
-\href{https://www.hackerrank.com/SalmanBhai}{HackerRank}.
+\textcolor{blue}{
+\href{https://www.codechef.com/users/sbshah}{Codechef}} and 
+\textcolor{blue}{
+\href{https://www.hackerrank.com/SalmanBhai}{HackerRank}}.
 
 \Gap
 
